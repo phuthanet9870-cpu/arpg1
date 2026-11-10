@@ -4,6 +4,12 @@
 
 ## ไฟล์พร้อมเล่น
 
+**ดาวน์โหลดจาก GitHub:** [ZIP เล่นออฟไลน์](https://github.com/phuthanet9870-cpu/arpg1/releases/download/v0.8.0/SUNBOUND-PLAY-OFFLINE.zip) · [ZIP เซิร์ฟเวอร์ Co-op](https://github.com/phuthanet9870-cpu/arpg1/releases/download/v0.8.0/SUNBOUND-online-server.zip) · [หน้ารุ่นที่เผยแพร่](https://github.com/phuthanet9870-cpu/arpg1/releases/tag/v0.8.0)
+
+**เว็บ:** snapshot อยู่ที่ `web/index.html` พร้อม workflow สำหรับ GitHub Pages; เจ้าของคลังต้องเปิด Settings → Pages → Source: GitHub Actions ครั้งแรก แล้วรัน workflow ดู [PUBLISHING.md](docs/PUBLISHING.md) ก่อนถือว่าลิงก์ Pages เปิดใช้งานแล้ว
+
+ไฟล์ใน `releases/` ด้านล่างเป็นผล build ภายในเครื่องพัฒนา ไม่ได้อยู่ใน source tree ของ GitHub ใช้ลิงก์ ZIP ด้านบนเพื่อดาวน์โหลด
+
 - `releases/SUNBOUND.html` — HTML ไฟล์เดียวรวมโค้ด ภาพและฟอนต์ เปิดเล่นคนเดียวด้วยเบราว์เซอร์ ไม่ต้องติดตั้ง Node
 - `releases/SUNBOUND-online-server.zip` — ชุด Co-op 1–4 คน ต้องมี Node.js 22.13+ (แนะนำ 24 LTS); แตกไฟล์แล้วรัน `START-WINDOWS.cmd` หรือ `sh START-MAC-LINUX.sh`
 - `releases/SPRITE-CHECK.png` — ภาพตรวจครบ 96 โพส รวมจุดที่กู้อาวุธข้ามช่องกลับมา
