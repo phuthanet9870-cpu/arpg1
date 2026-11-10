@@ -1,0 +1,10 @@
+import {safeCamp} from './overworld.mjs';
+import {MAPS} from './farming.mjs';
+export const BOSS_SIGNATURES=['เรียกฝูงผู้พิทักษ์','ผลึกเหมันต์','ปะทุลาวา','บึงพิษฟื้นพลัง','ฝนดาวพิพากษา'];
+export function advanceBoss(w,e,p){if(!e.boss||!Number.isInteger(e.mapId))return;const m=MAPS[e.mapId];if(!m||m.safe)return;const phase=e.hp/e.maxHp<.35?2:e.hp/e.maxHp<.7?1:0;if(phase<1||phase<=(e.encounterPhase||0))return;e.encounterPhase=phase;const signature=m.island;
+ w.event('bossphase',e.x,e.y-100,{text:BOSS_SIGNATURES[signature]+' • '+phase,color:'#eed49b'});
+ if(signature===0){for(let i=0;i<Math.min(4,m.local+1);i++){const a=i*Math.PI*2/(m.local+1);w.spawnEnemy(e.x+Math.cos(a)*100,e.y+Math.sin(a)*100,false,i%3)}return;}
+ const count=signature===4?3+m.local:signature===2?2+m.local:2;for(let i=0;i<count;i++){const angle=i*Math.PI*2/count,r=signature===4?130:count>2?80:55;w.hazards.push({id:++w.seq,x:p.x+Math.cos(angle)*r,y:p.y+Math.sin(angle)*r,radius:signature===1?80:signature===3?95:65,at:w.time+1.4+(signature===4?i*.2:0),until:w.time+(signature===2||signature===3?6:2.5),next:0,damage:signature===1?8:signature===4?16:7,slow:signature===1?.45:signature===3?.2:0,kind:['adds','frost','lava','poison','stars'][signature],boss:e.id});}
+ if(signature===3){e.hp=Math.min(e.maxHp,e.hp+e.maxHp*.08);w.event('heal',e.x,e.y-50,{text:'ฟื้นพลัง 8%',color:'#b9d992'});}w.hazards=w.hazards.slice(-40);
+}
+export function tickHazards(w,dt){w.hazards=w.hazards.filter(h=>h.until>w.time&&w.enemies.some(e=>e.id===h.boss&&e.hp>0));for(const h of w.hazards){if(w.time<h.at||w.time<h.next)continue;h.next=w.time+.7;for(const p of Object.values(w.players)){if(p.dead||safeCamp(w.zone,p)||p.invUntil>w.time||Math.hypot(p.x-h.x,p.y-h.y)>h.radius)continue;const damage=h.damage*(1-(p.auraEffects?.guard||0));p.hp=Math.max(0,p.hp-damage);if(h.slow){p.moveSlowUntil=w.time+1.2;p.moveSlow=h.slow;}w.event('damage',p.x,p.y-40,{text:'−'+Math.ceil(damage),color:'#efad9d',victim:p.id});if(p.hp<=0){p.dead=true;p.auto=false;p.blocking=false;p.lockId=null;p.inputs={};p.path=[];p.targetId=null;p.pending=[];p.minions=[];p.activeAuras=[];p.spiritReserved=0;}}}}

@@ -1,0 +1,45 @@
+name: Publish SUNBOUND game
+on:
+  push:
+    branches: [main]
+    paths: ['web/**', '.github/workflows/publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sunbound-publish
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create or update downloadable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.8.0 >/dev/null 2>&1; then
+            gh release upload v0.8.0 web/downloads/* --clobber
+          else
+            gh release create v0.8.0 web/downloads/* --target "$GITHUB_SHA" --title "SUNBOUND Alpha 0.8" --notes-file web/RELEASE-NOTES.md
+          fi
+  pages:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - name: Deploy playable game
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,9 @@
+import {io} from 'socket.io-client';
+import assert from 'node:assert/strict';
+const base=process.env.BASE_URL||'http://127.0.0.1:3003';const a=io(base),b=io(base);
+const connect=s=>new Promise((resolve,reject)=>{s.once('connect',resolve);s.once('connect_error',reject)});
+const join=(s,data)=>new Promise((resolve,reject)=>s.timeout(5000).emit('join',data,(err,res)=>err?reject(err):res.error?reject(Error(res.error)):resolve(res)));
+const wait=(s,pred)=>new Promise((resolve,reject)=>{const callback=state=>{if(pred(state)){clearTimeout(timeout);s.off('state',callback);resolve(state)}};const timeout=setTimeout(()=>{s.off('state',callback);reject(Error('state timeout'))},10000);s.on('state',callback)});
+try{await Promise.all([connect(a),connect(b)]);const host=await join(a,{create:true,classId:'knight',name:'Click host'});await join(b,{code:host.code,classId:'mage',name:'Auto guest'});const build=wait(b,s=>s.players[host.id]?.build===1);a.emit('action',{type:'build',index:1});await build;const moved=wait(b,s=>s.players[host.id]?.x>1080);a.emit('action',{type:'move',x:1200,y:900});const s=await moved;assert.ok(s.players[host.id].path.length>0);console.log('PASS server click movement synchronized to second client');
+const zone=wait(b,s=>s.zone===1);a.emit('action',{type:'travel',zone:1});await zone;const rolled=wait(b,s=>s.players[host.id]?.dodgeCharges===1);a.emit('action',{type:'dodge',x:0,y:-1});await rolled;console.log('PASS server build specialization and dodge charges synchronized');const fought=wait(b,s=>s.players[host.id]?.auto&&s.players[host.id]?.kills>0);a.emit('action',{type:'auto',enabled:true});await fought;const stopped=wait(b,s=>s.players[host.id]&&!s.players[host.id].auto);a.emit('action',{type:'stop'});await stopped;console.log('PASS authoritative auto combat, kills and stop synchronize to second client');
+}finally{a.disconnect();b.disconnect()}

@@ -1,0 +1,21 @@
+{
+  "version": "0.8.0",
+  "files": {
+    "index.html": {
+      "bytes": 6857116,
+      "sha256": "3f2b0846e156217417e0af7a8bee5e096b438ca4c5f1466a2fae5e536b6ebe03"
+    },
+    "downloads/SUNBOUND-PLAY-OFFLINE.zip": {
+      "bytes": 4263053,
+      "sha256": "72f90ece3965305e64f2d118c72d3d13ce35fae1f7e64f346d3d7344eb475514"
+    },
+    "downloads/SUNBOUND-online-server.zip": {
+      "bytes": 4360246,
+      "sha256": "e96f127ca5d26038948df78df5b3ab749a8c427531254b4e678a521b2a45dbd9"
+    },
+    "downloads/SPRITE-CHECK.png": {
+      "bytes": 716010,
+      "sha256": "4621188e203ce533f288afa6cdb24b776507690758ce2ac33c9bb0daa1463bc9"
+    }
+  }
+}

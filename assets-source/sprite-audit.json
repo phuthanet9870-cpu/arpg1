@@ -1,0 +1,1720 @@
+{
+  "knight": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          86,
+          15,
+          247,
+          287
+        ],
+        "bounds": [
+          56,
+          74,
+          101,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          382,
+          15,
+          544,
+          287
+        ],
+        "bounds": [
+          55,
+          74,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          691,
+          17,
+          854,
+          284
+        ],
+        "bounds": [
+          55,
+          76,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          965,
+          28,
+          1234,
+          284
+        ],
+        "bounds": [
+          51,
+          79,
+          126,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          90,
+          10,
+          229,
+          285
+        ],
+        "bounds": [
+          61,
+          73,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          360,
+          12,
+          534,
+          285
+        ],
+        "bounds": [
+          51,
+          74,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          671,
+          10,
+          828,
+          284
+        ],
+        "bounds": [
+          55,
+          74,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          933,
+          26,
+          1238,
+          283
+        ],
+        "bounds": [
+          46,
+          78,
+          131,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": true
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          88,
+          12,
+          239,
+          282
+        ],
+        "bounds": [
+          60,
+          75,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          392,
+          13,
+          546,
+          283
+        ],
+        "bounds": [
+          60,
+          75,
+          103,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          691,
+          10,
+          851,
+          283
+        ],
+        "bounds": [
+          57,
+          74,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          958,
+          30,
+          1239,
+          282
+        ],
+        "bounds": [
+          56,
+          80,
+          134,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          77,
+          13,
+          225,
+          286
+        ],
+        "bounds": [
+          58,
+          74,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          369,
+          12,
+          545,
+          286
+        ],
+        "bounds": [
+          58,
+          74,
+          107,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          674,
+          12,
+          834,
+          286
+        ],
+        "bounds": [
+          60,
+          74,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          872,
+          32,
+          1207,
+          285
+        ],
+        "bounds": [
+          26,
+          79,
+          119,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": true
+      }
+    ],
+    "recovered": [
+      7,
+      15
+    ],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.27889908256880735,
+    "source_sha256": "cb7408bbe4e8f3c996d93073f88cedb941f7ac39ee9e85aa3fff92c0a7d7d2b6",
+    "atlas_sha256": "ab4057c777109036e42c138cc88a08a343d0de7e38d0c18729349a3a9fa1f8ff"
+  },
+  "mage": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          78,
+          16,
+          257,
+          289
+        ],
+        "bounds": [
+          52,
+          73,
+          103,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          371,
+          16,
+          558,
+          289
+        ],
+        "bounds": [
+          51,
+          73,
+          104,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          683,
+          18,
+          866,
+          289
+        ],
+        "bounds": [
+          50,
+          73,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          966,
+          14,
+          1206,
+          289
+        ],
+        "bounds": [
+          47,
+          72,
+          115,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          90,
+          14,
+          241,
+          282
+        ],
+        "bounds": [
+          63,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          384,
+          13,
+          548,
+          281
+        ],
+        "bounds": [
+          60,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          694,
+          13,
+          860,
+          280
+        ],
+        "bounds": [
+          59,
+          75,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          956,
+          16,
+          1240,
+          280
+        ],
+        "bounds": [
+          53,
+          75,
+          133,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          78,
+          15,
+          248,
+          285
+        ],
+        "bounds": [
+          58,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          388,
+          15,
+          563,
+          287
+        ],
+        "bounds": [
+          58,
+          73,
+          107,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          698,
+          15,
+          875,
+          287
+        ],
+        "bounds": [
+          58,
+          73,
+          108,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          975,
+          7,
+          1229,
+          283
+        ],
+        "bounds": [
+          44,
+          72,
+          116,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          85,
+          14,
+          241,
+          279
+        ],
+        "bounds": [
+          52,
+          75,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          402,
+          14,
+          567,
+          278
+        ],
+        "bounds": [
+          53,
+          75,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          696,
+          14,
+          869,
+          279
+        ],
+        "bounds": [
+          53,
+          75,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          936,
+          16,
+          1221,
+          279
+        ],
+        "bounds": [
+          23,
+          76,
+          104,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": true
+      }
+    ],
+    "recovered": [
+      15
+    ],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.2825278810408922,
+    "source_sha256": "9cca013a7940684830747388d23e7cb18770f436d36567d34fe6a1cbe161077c",
+    "atlas_sha256": "3c91533ae2d400aefb7e2fc869986d4aae77d8452621dee24df507d8a46d0dd4"
+  },
+  "ranger": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          94,
+          16,
+          265,
+          297
+        ],
+        "bounds": [
+          58,
+          73,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          383,
+          19,
+          566,
+          297
+        ],
+        "bounds": [
+          56,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          688,
+          19,
+          866,
+          297
+        ],
+        "bounds": [
+          55,
+          74,
+          104,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          982,
+          19,
+          1204,
+          296
+        ],
+        "bounds": [
+          55,
+          74,
+          116,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          92,
+          17,
+          251,
+          295
+        ],
+        "bounds": [
+          61,
+          74,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          380,
+          19,
+          555,
+          295
+        ],
+        "bounds": [
+          58,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          694,
+          21,
+          868,
+          295
+        ],
+        "bounds": [
+          58,
+          75,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          961,
+          24,
+          1207,
+          295
+        ],
+        "bounds": [
+          53,
+          76,
+          120,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          83,
+          18,
+          245,
+          294
+        ],
+        "bounds": [
+          55,
+          74,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          388,
+          18,
+          569,
+          293
+        ],
+        "bounds": [
+          56,
+          75,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          693,
+          18,
+          871,
+          293
+        ],
+        "bounds": [
+          56,
+          75,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          953,
+          17,
+          1187,
+          294
+        ],
+        "bounds": [
+          41,
+          74,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          91,
+          18,
+          242,
+          293
+        ],
+        "bounds": [
+          58,
+          75,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          379,
+          18,
+          562,
+          291
+        ],
+        "bounds": [
+          54,
+          75,
+          104,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          688,
+          22,
+          862,
+          293
+        ],
+        "bounds": [
+          55,
+          76,
+          103,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          958,
+          22,
+          1209,
+          293
+        ],
+        "bounds": [
+          41,
+          76,
+          110,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      }
+    ],
+    "recovered": [],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.2743682310469314,
+    "source_sha256": "bbb021ad5e121a5502760a41f17f0ee752a0eab3dcee99ae7d236f98b8dbfa9f",
+    "atlas_sha256": "b0c680312cdb43e7d44f0723e7de16dd12bca2c52e7cce7052cb25159b850b5e"
+  },
+  "priest": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          58,
+          14,
+          240,
+          301
+        ],
+        "bounds": [
+          53,
+          73,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          361,
+          16,
+          548,
+          301
+        ],
+        "bounds": [
+          50,
+          73,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          685,
+          16,
+          861,
+          301
+        ],
+        "bounds": [
+          53,
+          73,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          961,
+          17,
+          1207,
+          301
+        ],
+        "bounds": [
+          43,
+          74,
+          109,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          89,
+          17,
+          231,
+          299
+        ],
+        "bounds": [
+          61,
+          74,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          380,
+          17,
+          551,
+          298
+        ],
+        "bounds": [
+          55,
+          75,
+          101,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          697,
+          17,
+          854,
+          299
+        ],
+        "bounds": [
+          56,
+          74,
+          98,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          963,
+          17,
+          1225,
+          299
+        ],
+        "bounds": [
+          48,
+          74,
+          118,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          73,
+          15,
+          254,
+          299
+        ],
+        "bounds": [
+          57,
+          74,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          395,
+          15,
+          571,
+          300
+        ],
+        "bounds": [
+          59,
+          73,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          702,
+          15,
+          879,
+          300
+        ],
+        "bounds": [
+          58,
+          73,
+          106,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          963,
+          17,
+          1215,
+          298
+        ],
+        "bounds": [
+          46,
+          75,
+          114,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          68,
+          18,
+          233,
+          299
+        ],
+        "bounds": [
+          54,
+          75,
+          98,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          389,
+          19,
+          560,
+          297
+        ],
+        "bounds": [
+          56,
+          75,
+          102,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          698,
+          19,
+          868,
+          298
+        ],
+        "bounds": [
+          55,
+          75,
+          101,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          952,
+          17,
+          1215,
+          298
+        ],
+        "bounds": [
+          40,
+          75,
+          111,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      }
+    ],
+    "recovered": [],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.26855123674911663,
+    "source_sha256": "b2d357a95b9e3061afb1ede8cae385f46c46aafa947b9e57dce49e1142bd7a90",
+    "atlas_sha256": "5563a511b6dab8ab036101ef78ad0265731bc8a7ba03f6c157f7f828913aa8a4"
+  },
+  "summoner": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          82,
+          12,
+          260,
+          289
+        ],
+        "bounds": [
+          63,
+          74,
+          112,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          383,
+          12,
+          558,
+          289
+        ],
+        "bounds": [
+          63,
+          74,
+          111,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          689,
+          12,
+          862,
+          290
+        ],
+        "bounds": [
+          63,
+          73,
+          111,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          966,
+          16,
+          1226,
+          286
+        ],
+        "bounds": [
+          64,
+          76,
+          136,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          96,
+          7,
+          249,
+          281
+        ],
+        "bounds": [
+          54,
+          75,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          384,
+          9,
+          546,
+          279
+        ],
+        "bounds": [
+          51,
+          76,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          672,
+          7,
+          837,
+          281
+        ],
+        "bounds": [
+          50,
+          75,
+          95,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          930,
+          31,
+          1236,
+          281
+        ],
+        "bounds": [
+          54,
+          81,
+          138,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": true
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          91,
+          1,
+          253,
+          280
+        ],
+        "bounds": [
+          51,
+          73,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          386,
+          2,
+          557,
+          282
+        ],
+        "bounds": [
+          50,
+          73,
+          97,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          673,
+          5,
+          858,
+          282
+        ],
+        "bounds": [
+          45,
+          74,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          951,
+          14,
+          1235,
+          282
+        ],
+        "bounds": [
+          38,
+          76,
+          116,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          80,
+          6,
+          231,
+          281
+        ],
+        "bounds": [
+          63,
+          74,
+          105,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          383,
+          2,
+          549,
+          280
+        ],
+        "bounds": [
+          64,
+          73,
+          110,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          676,
+          4,
+          854,
+          281
+        ],
+        "bounds": [
+          64,
+          74,
+          113,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          892,
+          31,
+          1222,
+          281
+        ],
+        "bounds": [
+          21,
+          81,
+          112,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": true
+      }
+    ],
+    "recovered": [
+      7,
+      15
+    ],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.2753623188405797,
+    "source_sha256": "38f617380642ffd4ca551998013cb3e404ac30c65ccd24f8ecd5ddaedc427996",
+    "atlas_sha256": "bac6b01385291a7dc2b5de036a44d4abb41e480b2d76522da76c62a8482eee6c"
+  },
+  "monk": {
+    "frames": [
+      {
+        "frame": 0,
+        "source_box": [
+          120,
+          13,
+          256,
+          300
+        ],
+        "bounds": [
+          61,
+          74,
+          97,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 1,
+        "source_box": [
+          412,
+          13,
+          546,
+          300
+        ],
+        "bounds": [
+          62,
+          74,
+          98,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 2,
+        "source_box": [
+          724,
+          15,
+          850,
+          300
+        ],
+        "bounds": [
+          63,
+          74,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 3,
+        "source_box": [
+          1003,
+          21,
+          1176,
+          300
+        ],
+        "bounds": [
+          51,
+          76,
+          97,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 4,
+        "source_box": [
+          104,
+          8,
+          236,
+          296
+        ],
+        "bounds": [
+          65,
+          74,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 5,
+        "source_box": [
+          392,
+          9,
+          553,
+          296
+        ],
+        "bounds": [
+          65,
+          74,
+          108,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 6,
+        "source_box": [
+          700,
+          9,
+          862,
+          293
+        ],
+        "bounds": [
+          64,
+          75,
+          107,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 7,
+        "source_box": [
+          986,
+          18,
+          1202,
+          296
+        ],
+        "bounds": [
+          61,
+          76,
+          118,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 8,
+        "source_box": [
+          121,
+          8,
+          254,
+          294
+        ],
+        "bounds": [
+          65,
+          74,
+          100,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 9,
+        "source_box": [
+          405,
+          7,
+          541,
+          295
+        ],
+        "bounds": [
+          63,
+          74,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 10,
+        "source_box": [
+          715,
+          9,
+          846,
+          295
+        ],
+        "bounds": [
+          63,
+          74,
+          98,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 11,
+        "source_box": [
+          989,
+          14,
+          1192,
+          290
+        ],
+        "bounds": [
+          56,
+          77,
+          110,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 12,
+        "source_box": [
+          122,
+          8,
+          259,
+          294
+        ],
+        "bounds": [
+          58,
+          74,
+          94,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 13,
+        "source_box": [
+          389,
+          10,
+          559,
+          291
+        ],
+        "bounds": [
+          51,
+          75,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 14,
+        "source_box": [
+          695,
+          8,
+          863,
+          291
+        ],
+        "bounds": [
+          51,
+          75,
+          96,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      },
+      {
+        "frame": 15,
+        "source_box": [
+          972,
+          12,
+          1200,
+          292
+        ],
+        "bounds": [
+          39,
+          76,
+          99,
+          150
+        ],
+        "clipped": false,
+        "column_crossing_recovered": false
+      }
+    ],
+    "recovered": [],
+    "frame_size": 160,
+    "anchor": [
+      80,
+      150
+    ],
+    "shared_scale": 0.26527050610820246,
+    "source_sha256": "4a126713c5c5922ca47048a757d76cc7ae886b39c4579e669403c392827cfdc4",
+    "atlas_sha256": "f1b142241efdd5f4b224e29cb719e0a0ee098ea743489676e87cbf327c145854"
+  }
+}

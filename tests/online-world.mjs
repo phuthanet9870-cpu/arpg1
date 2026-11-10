@@ -1,0 +1,10 @@
+import {io} from 'socket.io-client';import assert from 'node:assert/strict';
+const base=process.env.BASE_URL||'http://127.0.0.1:3006',a=io(base),b=io(base);
+const connect=s=>new Promise((resolve,reject)=>{s.once('connect',resolve);s.once('connect_error',reject)});
+const join=(s,data)=>new Promise((resolve,reject)=>s.timeout(5000).emit('join',data,(err,res)=>err?reject(err):res.error?reject(Error(res.error)):resolve(res)));
+const wait=(s,pred,ms=8000)=>new Promise((resolve,reject)=>{const listener=state=>{if(pred(state)){clearTimeout(timer);s.off('state',listener);resolve(state)}};const timer=setTimeout(()=>{s.off('state',listener);reject(Error('state timeout'))},ms);s.on('state',listener)});
+try{await Promise.all([connect(a),connect(b)]);const host=await join(a,{create:true,classId:'knight'});await join(b,{code:host.code,classId:'mage'});let state=await wait(b,s=>Object.keys(s.players).length===2);assert.equal(state.players[host.id].hotbar.length,20);
+const bound=wait(b,s=>s.players[host.id].hotbar[19]==='gem:blade-1');a.emit('action',{type:'bindbar',slot:19,binding:'gem:blade-1'});await bound;
+const destination=wait(b,s=>s.players[host.id].x>4000&&s.players[host.id].y>4000,30000);a.emit('action',{type:'move',x:4096,y:4096,run:true});state=await destination;const discovered=await wait(b,s=>s.players[host.id].discovered.includes('0:crossroads'));assert.ok(discovered.players[host.id].x>3900);const back=wait(b,s=>s.players[host.id].x===960&&s.players[host.id].y===1190);a.emit('action',{type:'waypoint',id:'entry'});await back;
+const zone=wait(b,s=>s.zone===1);a.emit('action',{type:'travel',zone:1});await zone;const cast=wait(b,s=>s.players[host.id].gemCooldowns['blade-1']>s.time);a.emit('action',{type:'usebar',slot:19,x:960,y:730});state=await cast;assert.ok(state.players[host.id].mp<state.players[host.id].maxMp);console.log('PASS two-client 20-slot binding, normal distant travel/discovery, fast travel, region transition and ability cooldown sync');
+}finally{a.disconnect();b.disconnect()}

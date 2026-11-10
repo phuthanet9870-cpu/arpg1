@@ -1,0 +1,46 @@
+{
+  "name": "sunbound-arpg",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "NODE_ENV=production node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.cjs",
+    "release": "npm run audit:sprites && npm run build && node scripts/release.mjs",
+    "test:standalone": "node tests/standalone.cjs",
+    "test:controls": "node tests/controls.cjs",
+    "test:combat-browser": "node tests/gems-browser.cjs",
+    "test:world-ui": "node tests/world-ui.cjs",
+    "test:online-world": "node tests/online-world.mjs",
+    "audit:sprites": "python3 scripts/audit-sprites.py",
+    "test:gems-browser": "node tests/gems-browser.cjs",
+    "test:farming-browser": "node tests/farming-browser.cjs",
+    "test:online-farming": "node tests/online-farming.mjs",
+    "test:progression-browser": "node tests/progression-browser.cjs",
+    "test:online-progression": "node tests/online-progression.mjs",
+    "test:alpha8-browser": "node tests/alpha8-browser.cjs",
+    "test:accounts-online": "node tests/accounts-online.mjs",
+    "publish:prepare": "npm run release && node scripts/prepare-web.mjs"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/noto-sans-thai": "^5.3.0",
+    "express": "^5.1.0",
+    "phaser": "^3.90.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "vite": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "playwright": "^1.65.0",
+    "typescript": "^5.8.3",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
