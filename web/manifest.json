@@ -1,17 +1,17 @@
 {
-  "version": "0.8.0",
+  "version": "0.10.0",
   "files": {
     "index.html": {
-      "bytes": 6857116,
-      "sha256": "3f2b0846e156217417e0af7a8bee5e096b438ca4c5f1466a2fae5e536b6ebe03"
+      "bytes": 7637888,
+      "sha256": "0944e4ce8c5155e93559dda5a796749a1907a2f0b47d8c61318e9bb075fa5655"
     },
     "downloads/SUNBOUND-PLAY-OFFLINE.zip": {
-      "bytes": 4263053,
-      "sha256": "72f90ece3965305e64f2d118c72d3d13ce35fae1f7e64f346d3d7344eb475514"
+      "bytes": 4809797,
+      "sha256": "dc62f0135e272acf5e05a15a99b916d792e2aa2e3ffee7a0df38ecdfed88e498"
     },
     "downloads/SUNBOUND-online-server.zip": {
-      "bytes": 4360246,
-      "sha256": "e96f127ca5d26038948df78df5b3ab749a8c427531254b4e678a521b2a45dbd9"
+      "bytes": 4925852,
+      "sha256": "159359f78791228eae8eb6295b941b82e78227f20aa1780fee302f219babc793"
     },
     "downloads/SPRITE-CHECK.png": {
       "bytes": 716010,

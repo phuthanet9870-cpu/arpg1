@@ -100,3 +100,22 @@ WORLD พื้นฐานและ HUD รุ่นนี้เสร็จต
 Limits: not 25 hand-painted maps or 20 unrelated AI implementations; specialisations grant stat bonuses, character art uses the approved six prototypes. Guest is not durable; account DB belongs to that one server. Email reset and multi-server replication are not implemented.
 
 Next choices: SOCIAL (friends/guild/party permissions), ENDGAME (dungeons/rewards/modifiers), SKILL TRIGGERS (meta/trigger supports and specialised build interactions). Ask choices after this complete delivery, not for the already approved 1–2–3 again.
+
+
+## ชุด 7 / Alpha 0.9 — ENDGAME → SOCIAL → SKILL TRIGGERS
+
+เสร็จ: 5 arena expeditions / 3 tiers / 4 modifiers / party-ready / wave director / bounded arena / death-time cap / one-time claims / token exchange and saved history; persistent account friends/guild membership/invites and role checks; room promotion/kick; 6 Spirit-reserving trigger links + 3 elemental reactions with recursion guard and shared skill costs.
+
+ตรวจ: 104 unit/integration tests, real two-client online run through combat/rewards/social permissions, labelled seeded browser fixtures for late-game panels and mobile, existing regressions, 96-pose sprite audit.
+
+Limits: dungeons reuse current maps, running rooms are not restored/rejoinable mid-run; no guild chat/stash/buffs or public matchmaking. Triggered casts do not chain triggers. Docs: ENDGAME-SOCIAL-TRIGGERS.md.
+
+Next choices after completing this round: ITEM DEPTH (weapon families/affix tiers), QUEST STORY (NPC and exploration chains), GAME FEEL & VISUAL POLISH (combat readability, animation and terrain transitions). Do not ask user to choose the completed 1–2–3 again.
+
+## ชุด 8 / Alpha 0.10 — GM / HUD / unified bag / constellation
+
+- เมนูขวาล่าง 19 ระบบแยกหน้าต่าง ปรับขนาด ย่อ/ขยาย
+- กระเป๋ารวม ค้นหา กรอง และจัดเรียงอัตโนมัติ
+- ไอคอนที่สร้างใหม่ 25 ภาพ ตรวจขอบ atlas และตัวละครเดิม
+- Skill Tree 144 โหนด ลาก/ซูมและจัดแต้มจริง
+- GM ออฟไลน์และสิทธิ์บัญชีบนเซิร์ฟเวอร์ พร้อม audit และ ban

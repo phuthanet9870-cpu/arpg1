@@ -1,6 +1,6 @@
 {
   "name": "sunbound-arpg",
-  "version": "0.8.0",
+  "version": "0.10.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,7 +23,11 @@
     "test:online-progression": "node tests/online-progression.mjs",
     "test:alpha8-browser": "node tests/alpha8-browser.cjs",
     "test:accounts-online": "node tests/accounts-online.mjs",
-    "publish:prepare": "npm run release && node scripts/prepare-web.mjs"
+    "publish:prepare": "npm run release && node scripts/prepare-web.mjs",
+    "test:alpha9-browser": "node tests/alpha9-browser.cjs",
+    "test:alpha9-online": "node tests/alpha9-online.mjs",
+    "test:gm-online": "node tests/gm-online.mjs",
+    "test:hud-browser": "node tests/gm-hud-browser.cjs"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

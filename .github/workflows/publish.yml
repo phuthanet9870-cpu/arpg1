@@ -20,10 +20,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v0.8.0 >/dev/null 2>&1; then
-            gh release upload v0.8.0 web/downloads/* --clobber
+          VERSION=$(node -p "require('./package.json').version")
+          TAG="v$VERSION"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" web/downloads/* --clobber
           else
-            gh release create v0.8.0 web/downloads/* --target "$GITHUB_SHA" --title "SUNBOUND Alpha 0.8" --notes-file web/RELEASE-NOTES.md
+            gh release create "$TAG" web/downloads/* --target "$GITHUB_SHA" --title "SUNBOUND Alpha $VERSION" --notes-file web/RELEASE-NOTES.md
           fi
   pages:
     runs-on: ubuntu-latest

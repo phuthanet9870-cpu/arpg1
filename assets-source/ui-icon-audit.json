@@ -1,0 +1,427 @@
+[
+  {
+    "sha256": "f57e279a757f04a0dfe7136b48673c5e60412672f6e74105743516dcf1487922",
+    "name": "hero",
+    "source_bbox": [
+      50,
+      36,
+      225,
+      238
+    ],
+    "bounds": [
+      17,
+      10,
+      111,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "981806acd52451f440987df45bb21a2a0a00d2e72e60ea45d56d51792c68dbe0",
+    "name": "bag",
+    "source_bbox": [
+      289,
+      46,
+      487,
+      238
+    ],
+    "bounds": [
+      10,
+      11,
+      118,
+      116
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "99eec239dcedbaae0769080b930ae8f24fe7edaf42e15b8722e8c5dcdb4a25b0",
+    "name": "gem",
+    "source_bbox": [
+      532,
+      46,
+      719,
+      234
+    ],
+    "bounds": [
+      10,
+      10,
+      117,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "46e82a8e3715b909c1765a2b8e17d9cccb07860e4268b0bcc0ac6e94977cd0ea",
+    "name": "passives",
+    "source_bbox": [
+      763,
+      34,
+      972,
+      242
+    ],
+    "bounds": [
+      10,
+      10,
+      118,
+      117
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "f11cc74589ef1f5d3236f3df500910870352ea5a66e5bd263849328ef2f6bafa",
+    "name": "forge",
+    "source_bbox": [
+      1012,
+      46,
+      1214,
+      238
+    ],
+    "bounds": [
+      10,
+      12,
+      118,
+      115
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "4dba59e65dd2baef8c4b0fc4723865da36d940e74fe5aa0563c8aec45016828f",
+    "name": "card",
+    "source_bbox": [
+      27,
+      298,
+      257,
+      464
+    ],
+    "bounds": [
+      10,
+      25,
+      118,
+      103
+    ],
+    "recovered_cross_cell": true
+  },
+  {
+    "sha256": "981f0ac6feb6492aee79cb1a93517e34a14ce9865dd2f135e7487aecfc0b38f8",
+    "name": "quests",
+    "source_bbox": [
+      282,
+      298,
+      479,
+      494
+    ],
+    "bounds": [
+      10,
+      10,
+      118,
+      117
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "76d31b7e86865e7792c3c14f3c493538d3b609b1b0ce9a715a360ee56eb4d133",
+    "name": "dungeon",
+    "source_bbox": [
+      517,
+      284,
+      734,
+      482
+    ],
+    "bounds": [
+      10,
+      14,
+      118,
+      113
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "b6161c4354fdb401e741907ac62c5d2ab1db1ebfdefd9f1d4384c20fc3d839f4",
+    "name": "world",
+    "source_bbox": [
+      768,
+      281,
+      974,
+      489
+    ],
+    "bounds": [
+      10,
+      10,
+      117,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "589203800d738e434b4ab75795ba29e07302f3ec679fca43ecfd9ce998cfdf35",
+    "name": "friends",
+    "source_bbox": [
+      1014,
+      306,
+      1213,
+      468
+    ],
+    "bounds": [
+      10,
+      20,
+      118,
+      108
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "f0dcc3d7981f4d478d7b26ce8c7b56e43d11b40ac85408c7babd8faee41c7b97",
+    "name": "guild",
+    "source_bbox": [
+      46,
+      523,
+      240,
+      730
+    ],
+    "bounds": [
+      13,
+      10,
+      114,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "1f367b27239e198fc607ef3b063bcc287c8f70318e1f74d8900fd0c038275737",
+    "name": "party",
+    "source_bbox": [
+      286,
+      530,
+      477,
+      716
+    ],
+    "bounds": [
+      10,
+      11,
+      118,
+      116
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "6cab294814a69352e231fb3ac60eed4c8bc4e379864887103f20b2426d8d8685",
+    "name": "settings",
+    "source_bbox": [
+      533,
+      532,
+      721,
+      718
+    ],
+    "bounds": [
+      10,
+      10,
+      118,
+      117
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "644991916ab77034d021bef6ce0234835955d8e4358c6c8717785c60e80df741",
+    "name": "triggers",
+    "source_bbox": [
+      801,
+      529,
+      944,
+      722
+    ],
+    "bounds": [
+      24,
+      10,
+      104,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "70810bedaf3b843379b7dd76acb5dbefdd5a5ea91dceb485354eccd110f47825",
+    "name": "gm",
+    "source_bbox": [
+      1011,
+      538,
+      1227,
+      702
+    ],
+    "bounds": [
+      10,
+      23,
+      118,
+      105
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "9dd9d48f0384d0ba8948bccd8dcf3a33f03ad2828d295c367d3396b2274f5d2b",
+    "name": "account",
+    "source_bbox": [
+      38,
+      769,
+      241,
+      949
+    ],
+    "bounds": [
+      10,
+      16,
+      118,
+      112
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "6b506a212583a10bd1ebdcd09c48889677d9aa663fc09673f06ecba3d55a1b37",
+    "name": "stash",
+    "source_bbox": [
+      279,
+      781,
+      489,
+      954
+    ],
+    "bounds": [
+      10,
+      19,
+      118,
+      108
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "68a2aacee5468e09427e7ec9a5f6b1727df9c90eb8b51dbf9f04862f2fb98fd4",
+    "name": "hotbar",
+    "source_bbox": [
+      515,
+      820,
+      738,
+      901
+    ],
+    "bounds": [
+      10,
+      44,
+      118,
+      83
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "b70c514566f9d0f2a2c0aedfc6db172c427103ea9aa05c1a31961c74713632a2",
+    "name": "weapon",
+    "source_bbox": [
+      771,
+      757,
+      967,
+      973
+    ],
+    "bounds": [
+      15,
+      10,
+      113,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "2ca1334f2b5ad8949718ddd766664f81371a726ec419f44bf5431994dd427502",
+    "name": "potion",
+    "source_bbox": [
+      1038,
+      760,
+      1193,
+      967
+    ],
+    "bounds": [
+      23,
+      10,
+      104,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "120f4aefe761a6d9186c1501c65484d716212042dc8e58405ebd17d89d37333d",
+    "name": "material",
+    "source_bbox": [
+      34,
+      1025,
+      241,
+      1207
+    ],
+    "bounds": [
+      10,
+      16,
+      118,
+      111
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "965ac399dc2aae4dba3b8d0108afd6c46c7a26175ea901ebdcabc883f5b5e46b",
+    "name": "junk",
+    "source_bbox": [
+      295,
+      1029,
+      478,
+      1207
+    ],
+    "bounds": [
+      10,
+      11,
+      118,
+      116
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "3aa4c66ecf4b9eb19a73bb2d6d275c9914584de189c6dc651df18155719de2c7",
+    "name": "ring",
+    "source_bbox": [
+      533,
+      1015,
+      715,
+      1209
+    ],
+    "bounds": [
+      13,
+      10,
+      114,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "a30941c9a4c1b47a04af5ecef15df2acf2b30a1552b96f33c0cec8ac990b5780",
+    "name": "charm",
+    "source_bbox": [
+      801,
+      1004,
+      946,
+      1217
+    ],
+    "bounds": [
+      27,
+      10,
+      101,
+      118
+    ],
+    "recovered_cross_cell": false
+  },
+  {
+    "sha256": "404065b80954e42dafdd5a9a2fe2c7ca1fde8011681081872e32424decfcc57e",
+    "name": "armor",
+    "source_bbox": [
+      1017,
+      1003,
+      1207,
+      1218
+    ],
+    "bounds": [
+      16,
+      10,
+      111,
+      118
+    ],
+    "recovered_cross_cell": false
+  }
+]

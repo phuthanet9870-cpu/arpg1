@@ -1,17 +1,18 @@
+import {notifyTrigger,elementalReaction} from './triggers.mjs';
 import {WORLD} from './data.mjs';
 import {buildFor,combatStats,ELEMENT_COLORS,directionFor} from './builds.mjs';
 export const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 export const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 export function face(p,x,y){if(Math.hypot(x-p.x,y-p.y)<.01)return;p.angle=Math.atan2(y-p.y,x-p.x);p.facing=directionFor(p.angle)}
-export function resetCombat(p){p.run=false;p.path=[];p.inputs={};p.targetId=null;p.lockId=null;p.destination=null;p.comboStep=0;p.combo=0;p.comboUntil=0;p.chainUntil=0;p.counterUntil=0;p.stamina=100;p.dodgeCharges=2;p.dodgeTimers=[];p.blocking=false;p.pending=[];p.skillCooldowns={};p.cooldowns={};p.attackUntil=0;p.attackId=0;p.hurtUntil=0;p.dodgeUntil=0;p.facing='south';p.angle=Math.PI/2;p.minions=[];}
+export function resetCombat(p){p.run=false;p.path=[];p.inputs={};p.targetId=null;p.lockId=null;p.destination=null;p.comboStep=0;p.combo=0;p.comboUntil=0;p.chainUntil=0;p.counterUntil=0;p.stamina=100;p.dodgeCharges=2;p.dodgeTimers=[];p.blocking=false;p.pending=[];p.skillCooldowns={};p.cooldowns={};p.attackUntil=0;p.attackId=0;p.hurtUntil=0;p.dodgeUntil=0;p.facing='south';p.angle=Math.PI/2;p.minions=[];p.moveSlowUntil=0;}
 export function applyHit(world,p,e,hit){
  if(e.hp<=0)return;const b=hit.gem?{freeze:hit.freeze,dot:hit.dotDuration,heal:1,leech:hit.leech}:buildFor(p);const vulnerable=(e.vulnerableUntil||0)>world.time?1+(e.vulnerabilityPercent||.15):1;const crit=world.random()<hit.crit;let damage=Math.max(1,Math.round(hit.damage*vulnerable*(crit?1.7:1)));
- if(e.brokenUntil>world.time)damage=Math.round(damage*1.25);e.hp-=damage;e.hurtUntil=world.time+.13;e.lastHitAngle=Math.atan2(e.y-p.y,e.x-p.x);
+ if(e.brokenUntil>world.time)damage=Math.round(damage*1.25);e.hp-=damage;e.hurtUntil=world.time+.13;e.lastHitOwner=p.id;e.lastHitTriggered=!!hit.triggered;if(hit.gem){elementalReaction(world,p,e,hit);if(crit&&!hit.triggered)notifyTrigger(world,p,'critical',e);}e.lastHitAngle=Math.atan2(e.y-p.y,e.x-p.x);
  if(!e.brokenUntil||e.brokenUntil<=world.time){e.poise=Math.min(100,(e.poise||0)+hit.poise);if(e.poise>=100){e.poise=0;e.brokenUntil=world.time+(e.boss?1.4:1.8);e.windup=0;world.event('break',e.x,e.y-35,{text:'เสียการทรงตัว',color:'#ffe1a5'});}}
  if(hit.finisher&&!e.boss){e.x=clamp(e.x+Math.cos(p.angle)*24,70,WORLD.w-70);e.y=clamp(e.y+Math.sin(p.angle)*24,100,WORLD.h-70)}
  const element=hit.element;if(hit.consumeDot&&e.dot>world.time)e.hp-=Math.round((e.dotPower||5)*2);if(hit.vulnerability){e.vulnerableUntil=world.time+4;e.vulnerabilityPercent=hit.vulnerability;}if(element==='ice'){e.slow=world.time+(hit.slowDuration||3);if(hit.finisher&&b.freeze){if(e.boss)e.poise=Math.min(99,(e.poise||0)+30);else e.frozenUntil=world.time+1.3}}
  if(element==='lightning'){e.shockUntil=world.time+3;if((hit.heavy||hit.finisher)&&!hit.vulnerability){e.vulnerableUntil=world.time+3;e.vulnerabilityPercent=.15;}}
- if(['fire','poison','curse'].includes(element)||hit.dotDuration){e.status=element==='physical'?'bleed':element;e.dot=world.time+(b.dot||3);e.dotPower=damage*(hit.dotScale||(element==='curse'?.18:.12));e.dotOwner=p.id;}
+ if(['fire','poison','curse'].includes(element)||hit.dotDuration){e.status=element==='physical'?'bleed':element;e.dot=world.time+(b.dot||3);e.dotPower=damage*(hit.dotScale||(element==='curse'?.18:.12));e.dotOwner=p.id;e.dotTriggered=!!hit.triggered;}
  if(hit.heavy&&b.vulnerable)e.vulnerableUntil=world.time+4;
  if(hit.heavy&&element==='poison'&&e.dot>world.time){e.hp-=Math.round(e.dotPower*2);world.fields.push({id:++world.seq,x:e.x,y:e.y,radius:95,until:world.time+3,tick:world.time+.5,damage:damage*.12,owner:p.id,color:ELEMENT_COLORS.poison})}
  const heal=hit.gem?damage*(hit.leech||0):(p.classId==='priest'?5*(b.heal||1):p.classId==='summoner'?3:0)+(hit.heavy?damage*(b.leech||0):0);if(heal){p.hp=Math.min(p.maxHp,p.hp+heal);if(p.classId==='priest'&&p.build===0)for(const ally of Object.values(world.players))if(ally.id!==p.id&&!ally.dead&&distance(ally,p)<260)ally.hp=Math.min(ally.maxHp,ally.hp+heal*.5)}
